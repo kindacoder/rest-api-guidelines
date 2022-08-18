@@ -288,13 +288,7 @@ Gzip will be enabled by default in production on all API responses.
 Some good tools and articles:
 
 - [Postman](https://www.getpostman.com/)
-- [API docs](http://apidocjs.com/)
 - [Swagger](http://swagger.io/)
-- [RAML](http://raml.org/index.html)
-- [Slate - API docs generator](https://github.com/lord/slate)
-- [Dev Docs](https://github.com/Thibaut/devdocs)
-- [ProgrammableWeb - Web API Documentation Best Practices](http://www.programmableweb.com/news/web-api-documentation-best-practices/2010/08/12)
-- [The Best API Documentation](http://bradfults.com/the-best-api-documentation/)
 
 Some good examples of API documentation:
 
