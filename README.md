@@ -43,8 +43,6 @@ GET /posts/711/comments/ (Returns a list of comments for post 711)
 GET /posts/711/comments/4 (Returns comment #4 for post 711)
 ```
 
-### Common cases:
-
 ## Rate limiting
 
 To prevent abuse, it is now standard practice to add some sort of rate limiting to an API. HTTP status code `429 Too Many Requests` will be returned if you exceed the prescribed rate limit.
