@@ -255,25 +255,6 @@ Gzip will be enabled by default in production on all API responses.
 - You want true or false as an actual JSON boolean, not a numeric string or a char(1).
 - Never directly expose db fields because if you add new fields later, the api structure will also change.
 
-## Documentation
-
-Some good tools and articles:
-
-- [Postman](https://www.getpostman.com/)
-- [API docs](http://apidocjs.com/)
-- [Swagger](http://swagger.io/)
-- [RAML](http://raml.org/index.html)
-- [Slate - API docs generator](https://github.com/lord/slate)
-- [Dev Docs](https://github.com/Thibaut/devdocs)
-- [ProgrammableWeb - Web API Documentation Best Practices](http://www.programmableweb.com/news/web-api-documentation-best-practices/2010/08/12)
-- [The Best API Documentation](http://bradfults.com/the-best-api-documentation/)
-
-Some good examples of API documentation:
-
-- [Twitter Docs](https://dev.twitter.com/overview/documentation)
-- [Stripe Docs](https://stripe.com/docs/api#charges)
-- [Twilio Docs](https://www.twilio.com/docs/api/rest)
-
 ## Other guidelines
 
 ### Git basic Guidelines
@@ -301,6 +282,25 @@ Some good examples of API documentation:
 - REFACTOR (Changing an existing feature without any change in overall functionality)
 - WIP (Temporary commit only for backup sake)
 - REMOVE (Remove a feature)
+
+## Documentation
+
+Some good tools and articles:
+
+- [Postman](https://www.getpostman.com/)
+- [API docs](http://apidocjs.com/)
+- [Swagger](http://swagger.io/)
+- [RAML](http://raml.org/index.html)
+- [Slate - API docs generator](https://github.com/lord/slate)
+- [Dev Docs](https://github.com/Thibaut/devdocs)
+- [ProgrammableWeb - Web API Documentation Best Practices](http://www.programmableweb.com/news/web-api-documentation-best-practices/2010/08/12)
+- [The Best API Documentation](http://bradfults.com/the-best-api-documentation/)
+
+Some good examples of API documentation:
+
+- [Twitter Docs](https://dev.twitter.com/overview/documentation)
+- [Stripe Docs](https://stripe.com/docs/api#charges)
+- [Twilio Docs](https://www.twilio.com/docs/api/rest)
 
 ### Credits / References
 
