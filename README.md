@@ -347,7 +347,7 @@ Gzip will be enabled by default in production on all API responses.
 
 - All API’s have backend validations as needed
 - All API’s are sending a response within 2000 ms.
-- .env.example and .env are in sync (For Laravel only)
+- .env.example and .env are in sync
 - Postman collection is being managed properly.
 - Database indexes have been added to all tables.
 - No commented code is included in the codebase. Commented code, not comments :)
