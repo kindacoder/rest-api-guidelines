@@ -108,16 +108,50 @@ Some folks will try to use HTTP status codes exclusively and skip using error co
 
 There will be some situations where the same endpoint could easily return the same status code for more than one different condition. The status codes are there to merely hint at the category of error relying on the actual error code and error message provided in the HTTP response to include more information in case the client is interested.
 
+
+### Some Basic error responses Examples: You can follow anyone of these as per your convenience: 
+
 ```
+
 {
-  "code" : 1234,
-  "message" : "Something bad happened :(",
-  "description" : "More details about the error here"
+    "success": false,
+    "code": 500,
+    "message": "Internal Server Error",
+    "errors":{}
 }
+
+```
+
+
+```
+
+{
+    "success": false,
+    "code": 401,
+    "message": "Unauthorized"
+    "errors":{}
+}
+
+```
+
+```
+
+{
+    "success": false,
+    "code": 422,
+    "message": "Password must be a string",
+    "errors": {
+        "password": [
+            "Password must be a string"
+        ]
+    }
+}
+
 ```
 
 ```
 {
+  "success":false,
   "code" : 1024,
   "message" : "Validation Failed",
   "errors" : [
@@ -133,6 +167,7 @@ There will be some situations where the same endpoint could easily return the sa
     }
   ]
 }
+
 ```
 
 - No internal names will be exposed in the API (for example, “node” and “taxonomy term”)
@@ -149,14 +184,17 @@ If no limit is specified, return results with a default limit.
 
 ```
 {
+  "success":true,
+  "code":200,
+  "data": [...],
   "metadata": {
     "pagination": {
-      "total": 227,
-      "page": 1,
-      "limit": 25
+      "count": 5,
+      "total": 618,
+      "currentPage": 2,
+      "totalPages": 124 
     }
-  },
-  "data": [...]
+  }
 }
 ```
 
@@ -164,18 +202,63 @@ If no limit is specified, return results with a default limit.
 
 ```
 {
-  "data": [
-    {
-      "name": "Hulk Hogan",
-      "id": "100002"
+  "success":true,
+  "code":200,
+  "data": [...]
+}
+
+```
+
+
+
+```
+{
+  "success":true,
+  "code":200,
+  "data": {
+      "name": "John doe",
+      "id": 1
+   }
+}
+
+```
+
+
+
+```
+{
+    "success": true,
+    "code": 200,
+    "data": {
+        "id": 1,
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john@mail.com"
     },
-    {
-      "name": "Mick Foley",
-      "id": "100003"
+    "metadata": {
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im"
     }
-  ]
+}
+
+```
+
+```
+{
+  "success":true,
+  "code":200,
+  "data": [...]
+   "metadata": {
+    "pagination": {
+      "count": 5,
+      "total": 618,
+      "currentPage": 2,
+      "totalPages": 124                  
+    }
+  },
 }
 ```
+
+
 
 For nesting foreign key relations:
 
