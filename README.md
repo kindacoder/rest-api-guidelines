@@ -76,8 +76,11 @@ GET /posts?fields=title,desc,id
 
 ## Versioning
 
-Our preferred URL structure would be `/post/api/v1`.
+We should have different versions of API if we’re making any changes to them that may break clients. The versioning can be done according to semantic version (for example, 2.0.6 to indicate major version 2 and the sixth patch) like most apps do nowadays.
 
+This way, we can gradually phase out old endpoints instead of forcing everyone to move to the new API at the same time. The v1 endpoint can stay active for people who don’t want to change, while the v2, with its shiny new features, can serve those who are ready to upgrade. This is especially important if our API is public. We should version them so that we won’t break third party apps that use our APIs.
+
+Versioning is usually done with `/v1/`, `/v2/`, etc. added at the start of the API path.
 Avoid v1.1 etc.
 
 ## Response Codes
@@ -300,5 +303,6 @@ Some good examples of API documentation:
 
 - http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api
 - https://github.com/squareboat/api-guidelines
+- https://stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design/
 
 ---
