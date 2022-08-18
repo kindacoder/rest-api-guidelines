@@ -244,7 +244,7 @@ GET /posts/12?includes=author,comments
 
 - We do not want people to know how many resources we have.
 - We do not want developers to automate a scraping script by going to /posts/1, /posts/2 etc. and scraping everything away.
-- Use GUIDs or UUIDs, check this nice article [UUIDs are Popular, but Bad for Performance](https://www.percona.com/blog/2019/11/22/uuids-are-popular-but-bad-for-performance-lets-discuss/)
+- Use GUIDs or UUIDs, check this nice article [UUIDs are Popular, but Bad for Performance](https://www.percona.com/blog/2019/11/22/uuids-are-popular-but-bad-for-performance-lets-discuss/) before you decide what to use.
 
 ## Enable GZip
 
@@ -276,7 +276,7 @@ Some good examples of API documentation:
 
 ### Credits / References
 
-http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api
-https://github.com/squareboat/api-guidelines
+- http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api
+- https://github.com/squareboat/api-guidelines
 
 ---
