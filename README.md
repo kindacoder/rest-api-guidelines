@@ -343,6 +343,29 @@ Gzip will be enabled by default in production on all API responses.
 
 ## Other guidelines
 
+### Backend checklists
+
+- All API’s have backend validations as needed
+- All API’s are sending a response within 2000 ms.
+- .env.example and .env are in sync (For Laravel only)
+- Postman collection is being managed properly.
+- Database indexes have been added to all tables.
+- No commented code is included in the codebase. Commented code, not comments :)
+- All third party API and webhook interactions (SMS services, CRM’s etc.) are being logged for both request and response
+- Passwords have been hashed in the database, using bcrypt etc.
+- All failed login attempts have been logged
+- Admin cannot login via the standard login page/ api
+- Changing a user’s email requires him to re-enter his password
+- Strong password policy of minimum 6 characters
+- File uploads are not being stored in a publicly accessible directory on the server
+- Email is being sent to the user incase of password change.
+- Reset password link expires after 1 hour
+- Resend OTP should not work within 1 minute of previous OTP send
+- The re-sent OTP should be same as previous OTP for 10 minutes
+- There should be a limit on the number of times the OTP can be requested.
+- Signup emails should not be from temporary email providers.
+- Bounce handling URL has been provided
+
 ### Git basic Guidelines
 
 1. Limit the subject line to 50 characters
