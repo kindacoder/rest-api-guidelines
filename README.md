@@ -163,8 +163,8 @@ If no limit is specified, return results with a default limit.
 {
   "data": [
     {
-	    "name": "Hulk Hogan",
-	    "id": "100002"
+      "name": "Hulk Hogan",
+      "id": "100002"
     },
     {
       "name": "Mick Foley",
@@ -230,7 +230,7 @@ GET /posts/12?includes=author,comments
   comments: [
     {
       "id": 1,
-	    "comment": "Comment 1"
+      "comment": "Comment 1"
     },
     {
       "id": 2,
