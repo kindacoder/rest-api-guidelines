@@ -274,6 +274,34 @@ Some good examples of API documentation:
 - [Stripe Docs](https://stripe.com/docs/api#charges)
 - [Twilio Docs](https://www.twilio.com/docs/api/rest)
 
+## Other guidelines
+
+### Git basic Guidelines
+
+1. Limit the subject line to 50 characters
+2. Capitalize the subject line
+3. Do not end the subject line with a period
+4. Use the imperative mood in the subject line. Explain what and why vs. how (The "how" is visible in the code itself)
+5. Do not use past-tense like FIXED etc.
+6. Do not mix multiple activities in the same commit.
+
+### Git Commit Best Practices
+
+#### A commit message should answer three primary questions:
+
+- Why is this change necessary?
+- How does this commit address the issue?
+- What effects does this change have?
+
+#### Standard prefixes to be followed for all commits:
+
+- FIX (For bug fixes with Trello card URL if possible)
+- ADD (New features)
+- CHANGE (Updating some functionality which is not a bug)
+- REFACTOR (Changing an existing feature without any change in overall functionality)
+- WIP (Temporary commit only for backup sake)
+- REMOVE (Remove a feature)
+
 ### Credits / References
 
 - http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api
