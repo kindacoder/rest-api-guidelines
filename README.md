@@ -153,7 +153,7 @@ If no limit is specified, return results with a default limit.
       "limit": 25
     }
   },
-  "results": [...]
+  "data": [...]
 }
 ```
 
