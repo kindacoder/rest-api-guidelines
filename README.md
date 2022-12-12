@@ -385,12 +385,12 @@ Gzip will be enabled by default in production on all API responses.
 
 #### Standard prefixes to be followed for all commits:
 
-- FIX (For bug fixes with Trello card URL if possible)
-- ADD (New features)
-- CHANGE (Updating some functionality which is not a bug)
-- REFACTOR (Changing an existing feature without any change in overall functionality)
-- WIP (Temporary commit only for backup sake)
-- REMOVE (Remove a feature)
+- FIX: (For bug fixes with Trello card URL if possible)
+- ADD: (New features)
+- CHANGE: (Updating some functionality which is not a bug)
+- REFACTOR: (Changing an existing feature without any change in overall functionality)
+- WIP: (Temporary commit only for backup sake)
+- REMOVE: (Remove a feature)
 
 ## Documentation
 
