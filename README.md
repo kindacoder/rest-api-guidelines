@@ -383,7 +383,7 @@ Gzip will be enabled by default in production on all API responses.
 - How does this commit address the issue?
 - What effects does this change have?
 
-#### Standard prefixes to be followed for all commits:
+#### Standard prefixes to be followed for all commits (If you are not using any project management tool like JIRA):
 
 - FIX: (For bug fixes with Trello card URL if possible)
 - ADD: (New features)
@@ -391,6 +391,15 @@ Gzip will be enabled by default in production on all API responses.
 - REFACTOR: (Changing an existing feature without any change in overall functionality)
 - WIP: (Temporary commit only for backup sake)
 - REMOVE: (Remove a feature)
+
+#### Standard prefixes to be followed for all commits (If you are using any project management tool like JIRA):
+
+- FIX(PRJCT-123): (For bug fixes with Trello card URL if possible)
+- ADD(PRJCT-123): (New features)
+- CHANGE(PRJCT-123): (Updating some functionality which is not a bug)
+- REFACTOR(PRJCT-123): (Changing an existing feature without any change in overall functionality)
+- WIP(PRJCT-123): (Temporary commit only for backup sake)
+- REMOVE(PRJCT-123): (Remove a feature)
 
 ## Documentation
 
