@@ -1,4 +1,4 @@
-# Rest API Guidelines
+# Rest API Guidelines by kartik
 
 The aim of this document is to highlight good practices for RESTful API design. We do understand that there are no right answers here, but some approaches have fewer cons than others.
 
